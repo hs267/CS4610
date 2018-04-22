@@ -1,0 +1,18 @@
+#version 410
+
+out vec4 frag_colour;
+in vec2 texture_coordinates;
+uniform sampler2D basic_texture;
+
+//in vec2 texture_coordinates;
+//uniform sampler2D basic_texture;
+
+
+void main()
+{
+    vec4 texel = texture(basic_texture, texture_coordinates);
+    frag_colour = texel;
+    
+}
+
+
